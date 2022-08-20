@@ -21,6 +21,7 @@ export default function Home() {
         aboutLink="#about"
         contactLink="#contact"
         langLink="/pt-br"
+        langImg="./assets/images/brazil-flag.png"
       />
       <Main hi="Hi, I am" subtitle="Fullstack Developer" />
       <About title="About me" cEmail="Teste" />

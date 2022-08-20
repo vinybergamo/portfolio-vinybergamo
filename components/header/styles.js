@@ -52,3 +52,9 @@ export const Link = styled.a`
     color: #27ae60;
   }
 `;
+
+export const Flag = styled.img`
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+`;

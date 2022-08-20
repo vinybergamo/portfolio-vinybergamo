@@ -21,6 +21,7 @@ export default function Home() {
         aboutLink="#about"
         contactLink="#contact"
         langLink="/"
+        langImg="./assets/images/usa-flag.png"
       />
       <Main hi="Olá, Me chamo" subtitle="Desenvolvedor Fullstack" />
       <About title="Sobre mim" />

@@ -8,7 +8,9 @@ const Header = (props) => {
         <C.Link href={props.aboutLink}>{props.about}</C.Link>
         <C.Link href="/services">{props.services}</C.Link>
         <C.Link href={props.contactLink}>{props.contact}</C.Link>
-        <C.Link href={props.langLink}>{props.lang}</C.Link>
+        <C.Link href={props.langLink}>
+          <C.Flag src={props.langImg} />
+        </C.Link>
       </C.Links>
     </C.Container>
   );
