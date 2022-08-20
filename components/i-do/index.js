@@ -17,8 +17,7 @@ const Ido = (props) => {
         <C.Card>
           <C.Icon src="./assets/images/icon3.png" />
           <C.Content>
-            <C.Text2>Web</C.Text2>
-            <C.Text>Design</C.Text>
+            <C.Text>Web Design</C.Text>
           </C.Content>
         </C.Card>
       </C.Container>

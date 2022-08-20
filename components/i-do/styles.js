@@ -6,11 +6,13 @@ export const Geral = styled.div`
   align-items: center;
 `;
 
+
 export const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 75px;
+
   @media (max-width: 1070px) {
     display: flex;
     flex-direction: column;
@@ -45,10 +47,16 @@ export const Card = styled.div`
     border-bottom: 5px solid #27ae60;
   }
 
+  @media (max-width: 1070px) {
+    width: 450px;
+  }
+
   @media (max-width: 850px) {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
+    width: 400px;
+  }
+
+  @media (max-width: 750px) {
+    width: 350px;
   }
 `;
 

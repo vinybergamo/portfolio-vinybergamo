@@ -28,9 +28,19 @@ export const Content = styled.div`
   align-items: center;
 
   @media (max-width: 1070px) {
-    width: 50%;
+    width: 450px;
     display: flex;
     flex-direction: column;
+  }
+
+  @media (max-width: 850px) {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 850px) {
+    width: 350px;
   }
 `;
 

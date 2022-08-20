@@ -9,7 +9,10 @@ export const Container = styled.div`
   margin-top: 5%;
 
   @media screen and (max-width: 850px) {
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 75px;
     margin-top: 7%;
@@ -30,6 +33,11 @@ export const CircleLarge = styled.div`
   height: 50px;
   border-radius: 50%;
   background-color: #212121;
+
+  @media screen and (max-width: 750px) {
+    width: 75px;
+    height: 75px;
+  }
 `;
 
 export const Circlemini = styled.div`
@@ -45,6 +53,11 @@ export const Circlemini = styled.div`
   &:hover {
     width: 100%;
     height: 100%;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 25px;
+    height: 25px;
   }
 `;
 
@@ -67,6 +80,10 @@ export const Texts = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 18px;
+
+  @media screen and (max-width: 750px) {
+    font-size: 20px;
+  }
 `;
 
 export const Title = styled.p`
@@ -74,6 +91,10 @@ export const Title = styled.p`
   color: #fff;
   font-weight: bold;
   margin-bottom: 1px;
+
+  @media screen and (max-width: 750px) {
+    margin-bottom: 3px;
+  }
 `;
 
 export const Subtitle = styled.p`

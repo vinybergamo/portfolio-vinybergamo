@@ -13,8 +13,8 @@ export const Container = styled.div`
   margin-bottom: 5%;
 
   @media (max-width: 900px) {
-    margin-top: 25%;
-    margin-bottom: 30%;
+    margin-top: 10%;
+    margin-bottom: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,8 +22,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 550px) {
-    margin-top: 40%;
-    margin-bottom: 50%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,6 +67,10 @@ export const Subtitle = styled.p`
   font-size: 18px;
   margin-bottom: 4%;
   user-select: none;
+
+  @media (max-width: 550px) {
+    font-size: 23px;
+  }
 `;
 
 export const Buttons = styled.div`
@@ -86,17 +89,18 @@ export const Button1 = styled.a`
   border: 1px solid #27ae60;
   padding: 12px 25px;
   background-color: #27ae60;
-  // border-radius: 5px;
   transition: 100ms;
   cursor: pointer;
 
-  &:hover {
-    width: 27%;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #27ae60;
+    transform: translateY(-0.25em);
   }
 
   @media (max-width: 550px) {
-    width: 65%;
-    font-size: 15px;
+    width: 250px;
+    font-size: 18px;
   }
 `;
 
@@ -112,13 +116,15 @@ export const Button2 = styled.a`
   transition: 100ms;
   cursor: pointer;
 
-  &:hover {
-    width: 27%;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #fff;
+    transform: translateY(-0.25em);
   }
 
   @media (max-width: 550px) {
-    width: 65%;
-    font-size: 15px;
+    width: 250px;
+    font-size: 18px;
   }
 `;
 
@@ -135,7 +141,7 @@ export const Image = styled.img`
   user-select: none;
   width: 350px;
 
-  @media (max-width: 350px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `;

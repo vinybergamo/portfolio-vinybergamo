@@ -15,7 +15,7 @@ const Skills = (props) => {
         </C.Card>{" "}
         <C.Card>
           <C.Title>50%</C.Title>
-          <C.Subtitle>Javascrip</C.Subtitle>
+          <C.Subtitle>Javascript</C.Subtitle>
         </C.Card>{" "}
         <C.Card>
           <C.Title>50%</C.Title>
