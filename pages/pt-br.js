@@ -5,6 +5,7 @@ import Circles from "../components/about/circles";
 import Ido from "../components/i-do";
 import Skills from "../components/skilss";
 import Form from "../components/form";
+import TopTop from "../components/toTop";
 import Footer from "../components/footer";
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
         message="Mensagem"
         submit="Enviar agora"
       />
+      <TopTop />
       <Footer link="#" rights="Todos os direitos reservados" />
     </>
   );
