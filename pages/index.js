@@ -15,7 +15,7 @@ export default function Home() {
         logo="Vinny"
         about="About me"
         services="Services"
-        contact="Contact-me"
+        contact="Contact me"
         lang="PT-BR"
         logoLink="#"
         aboutLink="#about"
@@ -24,7 +24,10 @@ export default function Home() {
         langImg="./assets/images/brazil-flag.png"
       />
       <Main hi="Hi, I am" subtitle="Fullstack Developer" />
-      <About title="About me" cEmail="Teste" />
+      <About
+        title="About me"
+        aboutme="Born in the city of Manaus and raised in the states of São Paulo and Rio de Janeiro. Since I was little, I've always liked technology and I've always tried to keep up to date. I'm that kind of person who likes to make the most of the technology I have in my hands and I've always wondered how things work."
+      />
       <Circles
         cName="Full Name"
         cEmail="Email Address"

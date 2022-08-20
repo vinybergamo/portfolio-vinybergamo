@@ -24,7 +24,10 @@ export default function Home() {
         langImg="./assets/images/usa-flag.png"
       />
       <Main hi="Olá, Me chamo" subtitle="Desenvolvedor Fullstack" />
-      <About title="Sobre mim" />
+      <About
+        title="Sobre mim"
+        aboutme="Nascido na cidade de Manaus e criado nos estados de São Paulo e Rio de Janeiro. Desde pequeno sempre gostei de tecnologia e sempre tentei me manter atualizado. Sou aquele tipo de pessoa que gosta de explorar ao máximo a tecnologia que tenho nas minhas mãos e sempre me perguntei como as coisas funcionam."
+      />
       <Circles
         cName="Nome Completo"
         cGithub="Github"
