@@ -3,7 +3,9 @@ import * as C from "./styles.js";
 const Header = (props) => {
   return (
     <C.Container>
-      <C.Logo href={props.logoLink}>{props.logo}</C.Logo>
+      <C.Logo href={props.logoLink}>
+        <C.Img src="./assets/images/logo.png"></C.Img>
+      </C.Logo>
       <C.Links>
         <C.Link href={props.aboutLink}>{props.about}</C.Link>
         <C.Link href="/services">{props.services}</C.Link>

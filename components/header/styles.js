@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  padding: 20px 100px;
+  padding: 20px 150px;
   justify-content: space-between;
   color: white;
-  align-items: center;
+  align-items: flex-end;
 
   @media (max-width: 750px) {
     display: flex;
@@ -57,4 +57,8 @@ export const Flag = styled.img`
   width: 30px;
   height: 30px;
   border-radius: 50%;
+`;
+
+export const Img = styled.img`
+  width: 50px;
 `;
