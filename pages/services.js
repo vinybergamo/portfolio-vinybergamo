@@ -13,7 +13,7 @@ export default function Home() {
         lang="PT-BR"
         logoLink="/"
         aboutLink="/#about"
-        contactLink="#contact"
+        contactLink="/#contact"
         langLink="/pt-br"
         langImg="./assets/images/brazil-flag.png"
       />
