@@ -6,6 +6,7 @@ import Ido from "../components/i-do";
 import Skills from "../components/skilss";
 import Form from "../components/form";
 import Footer from "../components/footer";
+import TopTop from "../components/toTop";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
         submit="Submit now"
       />
 
+      <TopTop></TopTop>
       <Footer link="#" rights="All rights reserved" />
     </>
   );
