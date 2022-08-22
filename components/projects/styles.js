@@ -50,7 +50,7 @@ export const Card = styled.div`
   }
 
   @media (max-width: ${breakpointMobile}) {
-    padding: 10px 10px 20px 5px;
+    padding: 10px 10px 20px 10px;
   }
 `;
 

@@ -13,9 +13,8 @@ const Main = (props) => {
         <C.Subtitle>{props.subtitle}</C.Subtitle>
         <C.Buttons>
           <C.Button1
-            href="/services"
-            target="_blank"
-            download="./assets/images/1.png"
+            href="/assets/documents/1.pdf"
+            download="curriculo-vinybergamo"
           >
             Download CV
           </C.Button1>
