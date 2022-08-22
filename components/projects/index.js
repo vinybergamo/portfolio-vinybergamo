@@ -7,7 +7,14 @@ let cssImg = "/assets/images/css.png";
 let errorImg = "/assets/images/error.png";
 
 const Projects = (props) => {
-  const [repositories, setRepositories] = useState([]);
+  const [repositories, setRepositories] = useState([
+    {
+      name: "Carregando...",
+      description: "...",
+      html_url: "#",
+      language: "HTML",
+    },
+  ]);
 
   useEffect(() => {
     fetch("https://api.github.com/users/vinybergamo/repos").then((response) =>
