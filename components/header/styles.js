@@ -2,17 +2,31 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  padding: 20px 150px;
+  padding: 20px 135px;
   justify-content: space-between;
   color: white;
   align-items: flex-end;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1070px) {
+    padding: 20px 65px;
+  }
+
+  @media (max-width: 900px) {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 50px;
+  }
+
+  > svg {
+    display: none;
+    font-size: 45px;
+
+    @media (max-width: 900px) {
+      display: block;
+    }
   }
 `;
 
@@ -31,12 +45,12 @@ export const Links = styled.div`
   display: flex;
   gap: 40px;
 
-  //   @media (max-width: 750px) {
-  //     visibility: hidden;
-  //   }
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
-export const Link = styled.a`
+export const Link = styled.span`
   color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -57,8 +71,10 @@ export const Flag = styled.img`
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  cursor: pointer;
 `;
 
 export const Img = styled.img`
   width: 50px;
+  cursor: pointer;
 `;

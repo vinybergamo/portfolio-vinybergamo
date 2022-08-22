@@ -1,9 +1,12 @@
+import Link from "next/link";
 import * as C from "./styles";
 
 const Footer = (props) => {
   return (
     <C.Container>
-      <C.Text href={props.link}>&copy; vinybergamo - {props.rights}</C.Text>
+      <Link href={props.link}>
+        <C.Text>&copy; vinybergamo - {props.rights}</C.Text>
+      </Link>
     </C.Container>
   );
 };

@@ -7,7 +7,11 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 `;
-export const Text = styled.a`
+export const Text = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center
   text-decoration: none;
   color: #4f4f4f;
   transition: 100ms;

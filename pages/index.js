@@ -12,16 +12,16 @@ export default function Home() {
   return (
     <>
       <Header
-        logo="Vinny"
+        logoLink="/"
+        logo="./assets/images/logo.png"
         about="About me"
-        services="Services"
+        projects="Projects"
         contact="Contact me"
-        lang="PT-BR"
-        logoLink="#"
         aboutLink="#about"
+        projectsLink="/en-us/projects"
         contactLink="#contact"
+        langImg="/assets/images/brazil-flag.png"
         langLink="/pt-br"
-        langImg="./assets/images/brazil-flag.png"
       />
       <Main hi="Hi, I am" subtitle="Fullstack Developer" />
       <About

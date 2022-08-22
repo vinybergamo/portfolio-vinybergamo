@@ -12,13 +12,14 @@ export default function Home() {
   return (
     <>
       <Header
-        logo="Vinny"
+        logo="./assets/images/logo.png"
         about="Sobre mim"
-        services="Serviços"
+        projects="Projetos"
         contact="Contato"
         lang="EN-US"
         logoLink="#"
         aboutLink="#about"
+        projectsLink="/pt-br/projetos"
         contactLink="#contact"
         langLink="/"
         langImg="./assets/images/usa-flag.png"
