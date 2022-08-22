@@ -11,6 +11,7 @@ import Footer from "../components/footer";
 export default function Home() {
   return (
     <>
+      <title>vinybergamo</title>
       <Header
         logo="./assets/images/logo.png"
         about="Sobre mim"

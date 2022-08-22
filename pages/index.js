@@ -11,6 +11,7 @@ import TopTop from "../components/toTop";
 export default function Home() {
   return (
     <>
+      <title>Vinybergamo</title>
       <Header
         logoLink="/"
         logo="./assets/images/logo.png"

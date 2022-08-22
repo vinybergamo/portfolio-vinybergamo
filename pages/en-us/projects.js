@@ -6,6 +6,7 @@ import TopTop from "../../components/toTop";
 export default function Home() {
   return (
     <>
+      <title>Projects - vinybergamo</title>
       <Header
         logo="../../assets/images/logo.png"
         about="About me"
@@ -19,7 +20,7 @@ export default function Home() {
         langLink="/pt-br/projetos"
         langImg="../../assets/images/brazil-flag.png"
       />
-      <Projects title="My Projects" language="Most used language" />
+      <Projects title="My Projects" language="Predominant language" />
       <TopTop />
       <Footer link="/" rights="All rights reserved" />
     </>

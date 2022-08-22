@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import * as C from "./styles.js";
 
 function Header(props) {
-  const [menuIsVisible, setMenuIsVisible] = useState(false);
+const [menuIsVisible, setMenuIsVisible] = useState(false);
 
   return (
     <C.Container>
