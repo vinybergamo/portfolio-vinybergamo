@@ -12,6 +12,14 @@ const [menuIsVisible, setMenuIsVisible] = useState(false);
       <MenuMobile
         menuIsVisible={menuIsVisible}
         setMenuIsVisible={setMenuIsVisible}
+        href1={props.href1}
+        htext1={props.htext1}
+        href2={props.href2}
+        htext2={props.htext2}
+        href3={props.href3}
+        htext3={props.htext3}
+        href4={props.href4}
+        himg={props.himg}
       />
       <Link href={props.logoLink}>
         <C.Img src={props.logo}></C.Img>

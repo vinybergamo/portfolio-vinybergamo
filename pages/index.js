@@ -23,6 +23,14 @@ export default function Home() {
         contactLink="#contact"
         langImg="/assets/images/brazil-flag.png"
         langLink="/pt-br"
+        href1="#about"
+        htext1="About me"
+        href2="/en-us/projects"
+        htext2="Projects"
+        href3="#contact"
+        htext3="Contact"
+        href4="/pt-br"
+        himg="/assets/images/brazil-flag.png"
       />
       <Main hi="Hi, I am" subtitle="Fullstack Developer" />
       <About

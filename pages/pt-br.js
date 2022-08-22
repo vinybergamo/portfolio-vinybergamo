@@ -24,6 +24,14 @@ export default function Home() {
         contactLink="#contact"
         langLink="/"
         langImg="./assets/images/usa-flag.png"
+        href1="#about"
+        htext1="Sobre mim"
+        href2="/pt-br/projetos"
+        htext2="Projetos"
+        href3="#contact"
+        htext3="Contato"
+        href4="/"
+        himg="/assets/images/usa-flag.png"
       />
       <Main hi="Olá, Me chamo" subtitle="Desenvolvedor Fullstack" />
       <About

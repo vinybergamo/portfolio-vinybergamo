@@ -19,6 +19,14 @@ export default function Home() {
         contactLink="/#contact"
         langLink="/pt-br/projetos"
         langImg="../../assets/images/brazil-flag.png"
+        href1="/#about"
+        htext1="About me"
+        href2="/en-us/projects"
+        htext2="Projects"
+        href3="/#contact"
+        htext3="Contact"
+        href4="/pt-br/projetos"
+        himg="/assets/images/brazil-flag.png"
       />
       <Projects title="My Projects" language="Predominant language" />
       <TopTop />

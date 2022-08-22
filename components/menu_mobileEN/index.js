@@ -3,7 +3,18 @@ import * as C from "./styles";
 import { useEffect } from "react";
 import Link from "next/link";
 
-export default function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
+export default function MenuMobile({
+  menuIsVisible,
+  setMenuIsVisible,
+  href1,
+  htext1,
+  href2,
+  htext2,
+  href3,
+  htext3,
+  href4,
+  himg,
+}) {
   useEffect(
     () => {
       document.body.style.overflow = menuIsVisible ? "hidden" : "auto";
@@ -14,14 +25,17 @@ export default function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
     <C.Container isVisible={menuIsVisible}>
       <IoClose size={45} onClick={() => setMenuIsVisible(false)} />
       <nav>
-        <Link href="/#about">
-          <C.Link>About me</C.Link>
+        <Link href={href1}>
+          <C.Link>{htext1}</C.Link>
         </Link>
-        <Link href="/en-us/projects">
-          <C.Link>Projects</C.Link>
+        <Link href={href2}>
+          <C.Link>{htext2}</C.Link>
         </Link>
-        <Link href="/#contact">
-          <C.Link>Contact</C.Link>
+        <Link href={href3}>
+          <C.Link>{htext3}</C.Link>
+        </Link>
+        <Link href={href4}>
+          <img src={himg} width="50px" height="50px" />
         </Link>
       </nav>
     </C.Container>
