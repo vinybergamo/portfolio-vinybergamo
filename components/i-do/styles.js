@@ -58,6 +58,10 @@ export const Card = styled.div`
   @media (max-width: 750px) {
     width: 350px;
   }
+
+  @media (max-width: 400px) {
+    width: 250px;
+  }
 `;
 
 export const Text = styled.p`
@@ -67,6 +71,11 @@ export const Text = styled.p`
   margin-bottom: 5%;
   margin-left: 5%;
   line-height: 50px;
+
+
+  @media (max-width: 400px) {
+    font-size: 35px;
+  }
 `;
 
 export const Text2 = styled.p`

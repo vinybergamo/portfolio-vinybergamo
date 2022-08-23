@@ -18,6 +18,10 @@ export const Main = styled.h4`
   font-size: 50px;
   align-items: center;
   font-weight: bold;
+
+  @media (max-width: 400px) {
+    font-size: 45px;
+  }
 `;
 
 export const Content = styled.div`
@@ -39,8 +43,12 @@ export const Content = styled.div`
     flex-direction: column;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 750px) {
     width: 350px;
+  }
+
+  @media (max-width: 400px) {
+    width: 250px;
   }
 `;
 
@@ -74,7 +82,7 @@ export const Title = styled.p`
   }
 
   @media (max-width: 500px) {
-    font-size: 50px;
+    font-size: 60px;
   }
 `;
 
@@ -82,7 +90,6 @@ export const Subtitle = styled.p`
   margin: 0;
   color: #27ae60;
   font-size: 25px;
-  font-height: 30px;
   font-weight: 700;
   transition: 100ms;
 
@@ -95,6 +102,6 @@ export const Subtitle = styled.p`
   }
 
   @media (max-width: 500px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
