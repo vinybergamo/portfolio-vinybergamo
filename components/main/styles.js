@@ -60,6 +60,10 @@ export const Title = styled.h1`
   @media (max-width: 550px) {
     text-align: center;
   }
+
+  @media (max-width: 350px) {
+    font-size: 40px;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -71,14 +75,19 @@ export const Subtitle = styled.p`
   @media (max-width: 550px) {
     font-size: 23px;
   }
+
+  @media (max-width: 350px) {
+    font-size: 18px;
+  }
 `;
 
 export const Buttons = styled.div`
   display: flex;
   gap: 15px;
-
   @media (max-width: 550px) {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 export const Button1 = styled.a`
@@ -101,6 +110,10 @@ export const Button1 = styled.a`
   @media (max-width: 550px) {
     width: 250px;
     font-size: 18px;
+  }
+
+  @media (max-width: 350px) {
+    width: 150px;
   }
 `;
 
@@ -125,6 +138,10 @@ export const Button2 = styled.a`
   @media (max-width: 550px) {
     width: 250px;
     font-size: 18px;
+  }
+
+  @media (max-width: 350px) {
+    width: 150px;
   }
 `;
 

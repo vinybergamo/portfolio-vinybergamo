@@ -21,6 +21,10 @@ export const Title = styled.h4`
   font-size: 50px;
   align-items: center;
   font-weight: bold;
+
+  @media (max-width: 350px) {
+    font-size: 40px;
+  }
 `;
 
 export const Form = styled.div`
@@ -133,5 +137,9 @@ export const Button = styled.button`
   @media (max-width: 550px) {
     width: 65%;
     font-size: 15px;
+  }
+
+  @media (max-width: 950px) {
+    width: 50%;
   }
 `;

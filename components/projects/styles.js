@@ -52,6 +52,10 @@ export const Card = styled.div`
   @media (max-width: ${breakpointMobile}) {
     padding: 10px 10px 20px 10px;
   }
+
+  @media (max-width: 350px) {
+    width: 200px;
+  }
 `;
 
 export const Image = styled.img`
@@ -114,6 +118,14 @@ export const Button1 = styled.a`
     width: 250px;
     font-size: 18px;
   }
+
+  @media (max-width: 375px) {
+    width: 150px;
+  }
+
+  @media (max-width: 350px) {
+    width: 120px;
+  }
 `;
 
 export const Button2 = styled.a`
@@ -135,5 +147,13 @@ export const Button2 = styled.a`
   @media (max-width: 550px) {
     width: 250px;
     font-size: 18px;
+  }
+
+  @media (max-width: 375px) {
+    width: 150px;
+  }
+
+  @media (max-width: 350px) {
+    width: 120px;
   }
 `;
