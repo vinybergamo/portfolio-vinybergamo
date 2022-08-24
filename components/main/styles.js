@@ -21,6 +21,10 @@ export const Container = styled.div`
     align-items: center;
   }
 
+  @media (max-width: 500px) {
+    margin-bottom: 0;
+  }
+
   @media (max-width: 550px) {
     margin-top: 5%;
     display: flex;

@@ -31,6 +31,22 @@ export const Title = styled.h4`
   font-size: 50px;
   align-items: center;
   font-weight: bold;
+
+  @media (max-width: 450px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 250px) {
+    font-size: 20px;
+  }
 `;
 
 export const Card = styled.div`
