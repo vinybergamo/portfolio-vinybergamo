@@ -19,8 +19,20 @@ export const Main = styled.h4`
   align-items: center;
   font-weight: bold;
 
+  @media (max-width: 450px) {
+    font-size: 40px;
+  }
+
   @media (max-width: 400px) {
-    font-size: 45px;
+    font-size: 30px;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 250px) {
+    font-size: 20px;
   }
 `;
 

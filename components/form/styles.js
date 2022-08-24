@@ -22,8 +22,20 @@ export const Title = styled.h4`
   align-items: center;
   font-weight: bold;
 
-  @media (max-width: 350px) {
+  @media (max-width: 450px) {
     font-size: 40px;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 275px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 250px) {
+    font-size: 20px;
   }
 `;
 
