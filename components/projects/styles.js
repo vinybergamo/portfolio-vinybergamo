@@ -88,6 +88,7 @@ export const UL = styled.ul`
 `;
 
 export const Buttons = styled.div`
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,9 +100,12 @@ export const Buttons = styled.div`
   }
 `;
 export const Button1 = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #fff;
-  width: 25%;
+  width: 50%;
   text-align: center;
   border: 1px solid #27ae60;
   padding: 12px 25px;
@@ -129,7 +133,10 @@ export const Button1 = styled.a`
 `;
 
 export const Button2 = styled.a`
-  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
   text-decoration: none;
   text-align: center;
   color: #fff;
