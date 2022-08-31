@@ -4,9 +4,10 @@
 * {
   font-family: "DM Sans";
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
-*::selection{
+*::selection {
   background-color: #27AE60;
 }
 
@@ -26,8 +27,9 @@ body {
   background-color: #2121;
   text-decoration: none;
   border-radius: 50%;
-box-shadow: 2px 4px 15px 0px #000000;
+  box-shadow: 2px 4px 15px 0px #000000;
 }
+
 .btn::after {
   display: flex;
   justify-content: center;
@@ -38,11 +40,12 @@ box-shadow: 2px 4px 15px 0px #000000;
   color: #27AE60;
   transition: margin-top 250ms;
 }
+
 .btn:hover::after {
   margin-top: -8px;
 }
 
-h1,h2,h3,h4,h5,h6,img {
+h1, h2, h3, h4, h5, h6, img {
   user-select: none;
 }
 
@@ -50,9 +53,7 @@ img {
   -webkit-user-drag: none;
 }
 
-.header-link {
-  
-}
+.header-link {}
 
 ul {
   margin: 0;

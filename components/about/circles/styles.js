@@ -61,7 +61,7 @@ export const Circlemini = styled.div`
     height: 100%;
   }
 
-  @media screen and (max-width: 750px) {
+  @media (max-width: 750px) {
     width: 25px;
     height: 25px;
   }
@@ -110,6 +110,14 @@ export const Title = styled.p`
 export const Subtitle = styled.p`
   color: #fff;
   margin: 0;
+
+  @media (max-width: 300px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 270px) {
+    font-size: 17px;
+  }
 `;
 
 export const Link = styled.a`
@@ -120,5 +128,13 @@ export const Link = styled.a`
 
   &:hover {
     color: #27ae60;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 270px) {
+    font-size: 17px;
   }
 `;

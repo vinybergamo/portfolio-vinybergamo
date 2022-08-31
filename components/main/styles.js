@@ -81,7 +81,7 @@ export const Subtitle = styled.p`
   }
 
   @media (max-width: 350px) {
-    font-size: 18px;
+    font-size: 15px;
   }
 `;
 
@@ -95,9 +95,12 @@ export const Buttons = styled.div`
   }
 `;
 export const Button1 = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #fff;
-  width: 25%;
+  width: 50%;
   text-align: center;
   border: 1px solid #27ae60;
   padding: 12px 25px;
@@ -111,6 +114,11 @@ export const Button1 = styled.a`
     transform: translateY(-0.25em);
   }
 
+  @media (max-width: 685px) {
+    width: 200px;
+    font-size: 18px;
+  }
+
   @media (max-width: 550px) {
     width: 250px;
     font-size: 18px;
@@ -118,18 +126,21 @@ export const Button1 = styled.a`
 
   @media (max-width: 350px) {
     width: 150px;
+    font-size: 15px;
   }
 `;
 
 export const Button2 = styled.a`
-  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
   text-decoration: none;
   text-align: center;
   color: #fff;
   text-align: center;
   border: 1px solid #fff;
   padding: 12px 25px;
-  // border-radius: 5px;
   transition: 100ms;
   cursor: pointer;
 
@@ -139,6 +150,11 @@ export const Button2 = styled.a`
     transform: translateY(-0.25em);
   }
 
+  @media (max-width: 685px) {
+    width: 200px;
+    font-size: 18px;
+  }
+
   @media (max-width: 550px) {
     width: 250px;
     font-size: 18px;
@@ -146,6 +162,7 @@ export const Button2 = styled.a`
 
   @media (max-width: 350px) {
     width: 150px;
+    font-size: 15px;
   }
 `;
 

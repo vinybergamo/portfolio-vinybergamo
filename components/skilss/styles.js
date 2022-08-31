@@ -11,6 +11,9 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.h4`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   user-select: none;
   color: #fff;
   margin-bottom: 5%;
@@ -40,7 +43,7 @@ export const Content = styled.div`
   width: 90%;
   background-color: #212121;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   @media (max-width: 1070px) {
@@ -68,7 +71,7 @@ export const Card = styled.div`
   padding: 5% 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -76,25 +79,22 @@ export const Card = styled.div`
   gap: 15px;
 `;
 
-export const Title = styled.p`
+export const Title = styled.div`
   margin: 0;
-  font-size: 72px;
+  font-size: 90px;
   text-align: center;
   line-height: 95px;
   font-weight: bold;
   color: #4f4f4f;
-  transition: 100ms;
-
-  &:hover {
-    letter-spacing: 5px;
-  }
 
   @media (max-width: 850px) {
-    font-size: 65px;
+    svg {
+      font-size: 85px;
+    }
   }
 
   @media (max-width: 500px) {
-    font-size: 60px;
+    font-size: 80px;
   }
 `;
 
@@ -110,10 +110,10 @@ export const Subtitle = styled.p`
   }
 
   @media (max-width: 850px) {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   @media (max-width: 500px) {
-    font-size: 20px;
+    font-size: 22px;
   }
 `;
