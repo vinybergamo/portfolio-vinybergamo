@@ -4,6 +4,7 @@ import * as C from "./styles.js";
 let jsImg = "/assets/images/js.png";
 let htmlImg = "/assets/images/html.png";
 let cssImg = "/assets/images/css.png";
+let TypeScriptImg = "/assets/images/typescript.png";
 let errorImg = "/assets/images/error.png";
 
 const Projects = (props) => {
@@ -42,6 +43,8 @@ const Projects = (props) => {
                           ? `${htmlImg}`
                           : repository.language === "CSS"
                           ? `${cssImg}`
+                          : repository.language === "TypeScript"
+                          ? `${TypeScriptImg}`
                           : `${errorImg}`
                       }`}
                       layout="responsive"
