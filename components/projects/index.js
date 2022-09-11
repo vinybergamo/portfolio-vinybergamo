@@ -29,9 +29,9 @@ const Projects = (props) => {
         <C.Title>{props.title}</C.Title>
         <C.Content>
           <C.UL>
-            {repositories.map((repository) => {
+            {repositories.map((repository, key) => {
               return (
-                <li key={repository.id}>
+                <li key={key}>
                   <C.Card>
                     <p>{props.language}</p>
                     <C.Image
