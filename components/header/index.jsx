@@ -1,11 +1,11 @@
 import Link from "next/link.js";
 import { useState } from "react";
-import MenuMobile from "../menu_mobileEN/index.js";
+import MenuMobile from "../menu_mobileEN/index";
 import { GiHamburgerMenu } from "react-icons/gi";
-import * as C from "./styles.js";
+import * as C from "./styles";
 
 function Header(props) {
-const [menuIsVisible, setMenuIsVisible] = useState(false);
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
 
   return (
     <C.Container>

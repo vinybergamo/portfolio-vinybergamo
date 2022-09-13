@@ -1,4 +1,4 @@
-import * as C from "./styles.js";
+import * as C from "./styles";
 
 import { AiOutlineLinkedin } from "react-icons/ai";
 

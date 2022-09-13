@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import * as C from "./styles.js";
+import * as C from "./styles";
 
 let jsImg = "/assets/images/js.png";
 let htmlImg = "/assets/images/html.png";

@@ -11,7 +11,7 @@ export const Text = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center
+  text-align: center;
   text-decoration: none;
   color: #4f4f4f;
   transition: 100ms;

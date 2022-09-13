@@ -1,5 +1,4 @@
-import * as C from "./styles.js";
-import Circles from "./circles/index.js";
+import * as C from "./styles";
 
 const About = (props) => {
   return (
