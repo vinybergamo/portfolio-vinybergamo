@@ -1,6 +1,6 @@
 import { IoClose } from "react-icons/io5";
 import * as C from "./styles";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import Link from "next/link";
 
 export default function MenuMobile({
@@ -15,7 +15,7 @@ export default function MenuMobile({
   href4,
   himg,
 }) {
-  useEffect(
+  useLayoutEffect(
     () => {
       document.body.style.overflow = menuIsVisible ? "hidden" : "auto";
     },
