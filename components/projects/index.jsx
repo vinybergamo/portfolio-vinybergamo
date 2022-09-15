@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import * as C from "./styles";
 
 let jsImg = "/assets/images/js.png";
@@ -17,7 +17,7 @@ const Projects = (props) => {
     },
   ]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     fetch("https://api.github.com/users/vinybergamo/repos").then((response) =>
       response.json().then((data) => setRepositories(data))
     );
