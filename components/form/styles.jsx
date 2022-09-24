@@ -102,7 +102,6 @@ export const Br = styled.div`
 `;
 
 export const Area = styled.div`
-  color: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -114,6 +113,7 @@ export const Area = styled.div`
 `;
 
 export const Textarea = styled.textarea`
+  color: #fff;
   width: 670px;
   margin-top: 30px;
   background: transparent;
