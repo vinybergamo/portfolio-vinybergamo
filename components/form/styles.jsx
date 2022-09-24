@@ -39,7 +39,7 @@ export const Title = styled.h4`
   }
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   width: 50%;
   display: flex;
   justify-content: center;
@@ -102,6 +102,7 @@ export const Br = styled.div`
 `;
 
 export const Area = styled.div`
+  color: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;
