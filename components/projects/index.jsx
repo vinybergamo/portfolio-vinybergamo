@@ -1,4 +1,5 @@
-import { useLayoutEffect, useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import * as C from "./styles";
 
 let jsImg = "/assets/images/js.png";
@@ -17,10 +18,10 @@ const Projects = (props) => {
     },
   ]);
 
-  useLayoutEffect(() => {
-    fetch("https://api.github.com/users/vinybergamo/repos").then((response) =>
-      response.json().then((data) => setRepositories(data))
-    );
+  useEffect(() => {
+    axios
+      .get("https://api.github.com/users/vinybergamo/repos")
+      .then((response) => setRepositories(response.data));
   }, []);
 
   return (
