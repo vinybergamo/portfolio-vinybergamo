@@ -12,7 +12,7 @@ const Form = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post("http://54.233.80.133:3000/api/message", {
+    axios.post("https://54.233.80.133:3000/api/message", {
       name,
       last_name: lastName,
       email,
