@@ -12,18 +12,20 @@ const Form = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    try {
-      axios.post("https://api.lucafreimport.com.br/api/message", {
+    axios
+      .post("https://api.lucafreimport.com.br/api/message", {
         name,
         last_name: lastName,
         email,
         phone,
         message,
+      })
+      .then(() => alert("Message sent succefully!"))
+      .catch((response) => {
+        alert(
+          `Error to send message\nStatus code: ${response.response.status}`
+        );
       });
-      alert("Mensagem enviada");
-    } catch (error) {
-      alert("Erro ao enviar mensagem");
-    }
 
     setName("");
     setLastName("");
