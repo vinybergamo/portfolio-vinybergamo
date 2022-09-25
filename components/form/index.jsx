@@ -12,21 +12,24 @@ const Form = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post("https://54.233.80.133:3000/api/message", {
-      name,
-      last_name: lastName,
-      email,
-      phone,
-      message,
-    });
+    try {
+      axios.post("https://api.lucafreimport.com.br/api/message", {
+        name,
+        last_name: lastName,
+        email,
+        phone,
+        message,
+      });
+      alert("Mensagem enviada");
+    } catch (error) {
+      alert("Erro ao enviar mensagem");
+    }
 
     setName("");
     setLastName("");
     setEmail("");
     setPhone("");
     setMessage("");
-
-    alert("Mensagem enviada");
   };
 
   return (
