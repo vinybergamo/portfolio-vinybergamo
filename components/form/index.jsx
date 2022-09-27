@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Api from "../../services/api";
 import * as C from "./styles";
+import ReactInputMask from "react-input-mask";
 
 const Form = (props) => {
   const [name, setName] = useState("");
@@ -56,11 +57,13 @@ const Form = (props) => {
               placeholder={props.lastname}
               onChange={(e) => setLastName(e.target.value)}
             ></C.Input>
-            <C.Input
+            <ReactInputMask
+              className="inputPhone"
+              mask="(99) 99999-9999"
               value={phone}
               placeholder={props.phone}
               onChange={(e) => setPhone(e.target.value)}
-            ></C.Input>
+            />
           </C.Br>
         </C.Content>
         <C.Area>

@@ -99,6 +99,25 @@ export const Br = styled.div`
   @media (max-width: 750px) {
     width: 75%;
   }
+
+  .inputPhone {
+    margin-top: 30px;
+    width: 300px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #4f4f4f;
+    color: #fff;
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+
+    &:focus {
+      border: none;
+      border-bottom: 2px solid #27ae60;
+      outline: none;
+    }
+  }
 `;
 
 export const Area = styled.div`
