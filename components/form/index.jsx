@@ -1,5 +1,5 @@
-import axios from "axios";
 import { useState } from "react";
+import Api from "../../services/api";
 import * as C from "./styles";
 
 const Form = (props) => {
@@ -12,14 +12,13 @@ const Form = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios
-      .post("https://api.lucafreimport.com.br/api/message", {
-        name,
-        last_name: lastName,
-        email,
-        phone,
-        message,
-      })
+    Api.post("/message", {
+      name,
+      last_name: lastName,
+      email,
+      phone,
+      message,
+    })
       .then(() => alert("Message sent succefully!"))
       .catch((response) => {
         alert(
