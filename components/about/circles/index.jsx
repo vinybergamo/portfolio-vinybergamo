@@ -24,7 +24,7 @@ const Circles = (props) => {
         <C.Texts>
           <C.Title>{props.cEmail}</C.Title>
           <C.Link href="mailto:vinybergamo@gmail.com" target="_blank">
-            vinybergamo@gmail.com
+            contato@vinybergamo.com.br
           </C.Link>
         </C.Texts>
       </C.Circle>{" "}

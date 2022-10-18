@@ -3,8 +3,11 @@ import { useState } from "react";
 import MenuMobile from "../menu_mobileEN/index";
 import { GiHamburgerMenu } from "react-icons/gi";
 import * as C from "./styles";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 function Header(props) {
+  const router = useRouter();
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 
   return (
@@ -21,9 +24,16 @@ function Header(props) {
         href4={props.href4}
         himg={props.himg}
       />
-      <Link href={props.logoLink}>
-        <C.Img src={props.logo}></C.Img>
-      </Link>
+      <Image
+        onClick={() => {
+          router.push(props.logoLink);
+        }}
+        src={props.logo}
+        alt="logo"
+        width="50px"
+        height="40px"
+        style={{ cursor: "pointer" }}
+      />
       <C.Links>
         <Link href={props.aboutLink}>
           <C.Link>{props.about}</C.Link>
@@ -35,7 +45,7 @@ function Header(props) {
           <C.Link>{props.contact}</C.Link>
         </Link>
         <Link href={props.langLink}>
-          <C.Flag src={props.langImg} />
+          <Image src={props.langImg} width="30px" height="30px" style={{ cursor: "pointer" }} />
         </Link>
       </C.Links>
       <GiHamburgerMenu onClick={() => setMenuIsVisible(true)} />

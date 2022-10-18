@@ -74,7 +74,7 @@ export const Flag = styled.img`
   cursor: pointer;
 `;
 
-export const Img = styled.img`
+export const Img = styled.div`
   width: 50px;
   cursor: pointer;
 `;

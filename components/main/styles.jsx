@@ -173,12 +173,7 @@ export const Span = styled.span`
   left: -25px;
 `;
 
-export const Image = styled.img`
-  pointer-event: none;
-  user-drag: none;
-  user-select: none;
-  width: 350px;
-
+export const Image = styled.div`
   @media (max-width: 900px) {
     display: none;
   }

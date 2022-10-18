@@ -1,6 +1,7 @@
 import * as C from "./styles";
 
 import { AiOutlineLinkedin } from "react-icons/ai";
+import Image from "next/image";
 
 const Main = (props) => {
   return (
@@ -12,16 +13,10 @@ const Main = (props) => {
         </C.Title>
         <C.Subtitle>{props.subtitle}</C.Subtitle>
         <C.Buttons>
-          <C.Button1
-            href="/assets/documents/1.pdf"
-            download="curriculo-vinybergamo"
-          >
+          <C.Button1 href="/assets/documents/1.pdf" download="curriculo-vinybergamo">
             Download CV
           </C.Button1>
-          <C.Button2
-            href="https://www.linkedin.com/in/vinycios-bergamo-653393246/"
-            target="_blank"
-          >
+          <C.Button2 href="https://www.linkedin.com/in/vinybergamo" target="_blank">
             <C.Span>
               <AiOutlineLinkedin />
             </C.Span>
@@ -29,7 +24,14 @@ const Main = (props) => {
           </C.Button2>
         </C.Buttons>
       </C.Content>
-      <C.Image src="./assets/images/2.png"></C.Image>
+      <C.Image>
+        <Image
+          width="350px"
+          height="365px"
+          style={{ pointerEvent: "none", userDrag: "none", userSelect: "none" }}
+          src="/assets/images/2.png"
+        />
+      </C.Image>
     </C.Container>
   );
 };

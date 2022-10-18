@@ -8,12 +8,18 @@ import Form from "../components/form";
 import TopTop from "../components/toTop";
 import Footer from "../components/footer";
 
+export const getStaticProps = () => {
+  return {
+    props: {},
+  };
+};
+
 export default function Home() {
   return (
     <>
       <title>Vinybergamo</title>
       <Header
-        logo="./assets/images/logo.png"
+        logo="/assets/images/logo.png"
         about="Sobre mim"
         projects="Projetos"
         contact="Contato"
@@ -23,7 +29,7 @@ export default function Home() {
         projectsLink="/pt-br/projetos"
         contactLink="#contact"
         langLink="/"
-        langImg="./assets/images/usa-flag.png"
+        langImg="/assets/images/usa-flag.png"
         href1="#about"
         htext1="Sobre mim"
         href2="/pt-br/projetos"
@@ -38,12 +44,7 @@ export default function Home() {
         title="Sobre mim"
         aboutme="Nascido na cidade de Manaus e criado nos estados de São Paulo e Rio de Janeiro. Desde pequeno sempre gostei de tecnologia e sempre tentei me manter atualizado. Sou aquele tipo de pessoa que gosta de explorar ao máximo a tecnologia que tenho nas minhas mãos e sempre me perguntei como as coisas funcionam."
       />
-      <Circles
-        cName="Nome Completo"
-        cGithub="Github"
-        cPhone="Celular"
-        cEmail="Endereço de email"
-      />
+      <Circles cName="Nome Completo" cGithub="Github" cPhone="Celular" cEmail="Endereço de email" />
       <Ido title="O que eu faço" />
       <Skills title="Minhas habilidades" />
       <Form
